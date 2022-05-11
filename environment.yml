@@ -1,0 +1,31 @@
+name: env-qe
+
+channels:
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - python=3.9
+
+  # Core scientific python
+  - numpy
+  - tqdm
+  
+  # Plotting
+  - matplotlib
+
+  # Machine Learning
+  - scikit-learn
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - cudatoolkit=11.3
+
+  # Jupyter Environment
+  - papermill
+  - autopep8
+  - jupyterlab
+  - notebook
+  - ipython
+  - jupyter_contrib_nbextensions
+  - nbclean
+  - nbresuse

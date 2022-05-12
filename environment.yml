@@ -10,6 +10,10 @@ dependencies:
   # Core scientific python
   - numpy
   - tqdm
+
+  # Quantum operations
+  - pennylane
+  #- qiskit
   
   # Plotting
   - matplotlib

@@ -272,7 +272,8 @@ class TCN(nn.Module):
         x = x.mean(dim=2)
         x = self.tcn_output(x)
         return self.activation(x)
-
+        
+    ### get embedding for latent tasks
     def emb(self, x):
         # x needs to have dimension (N, C, L) in order to be passed into CNN
         x = self.tcn_trunk(x.transpose(1, 2))
@@ -307,7 +308,7 @@ class MultiscaleMultibranchTCN(nn.Module):
         out = self.tcn_output(out)
         return self.activation(out)
 
-
+    ### get embedding for latent tasks
     def emb(self, x):
         # x needs to have dimension (N, C, L) in order to be passed into CNN
         xtrans = x.transpose(1, 2)

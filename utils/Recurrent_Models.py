@@ -64,7 +64,7 @@ class LSTMClassifier(nn.Module):
         return self.activation(out)
 
     # function to get embedding or latent representation
-    def get_emb(self, x):
+    def emb(self, x):
         hidden,cell = self.init_hidden(x)
         time_steps=x.shape[1]              #shape of x is (batches,time_Steps,features)
         

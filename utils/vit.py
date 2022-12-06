@@ -4,7 +4,7 @@ from torch import nn, einsum
 from einops import rearrange, repeat
 from einops.layers.torch import Rearrange
 
-from pe import PositionalEncoding, ScaledPositionalEncoding
+from utils.pe import PositionalEncoding, ScaledPositionalEncoding
 
 # helpers
 
@@ -182,9 +182,8 @@ class TransformerEncoder(nn.Module):  # the transformer encoder modified for tem
 
         return score
 
-
+    ### get penultimate_embedding
     def emb(self, x):
-
         b, n, _ = x.shape
 
         if self.use_class_token:

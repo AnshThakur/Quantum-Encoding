@@ -12,8 +12,8 @@ conda activate env-qe
 ```
 
 Then run the appropriate notebooks detailing the experiments.
-
-**Alternatively** you can open the notebooks directly in Google Colab:
+<!-- 
+**Alternatively** you can open the notebooks directly in Google Colab: -->
 
 <!-- [![Example notebook 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AnshThakur/Quantum-Encoding/blob/main/encoding_time_series.ipynb)
 
